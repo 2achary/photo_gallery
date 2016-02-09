@@ -1,30 +1,30 @@
-//Creates light box behavior for an image gallery
-
-var $overlay = $('<div id="overlay"></div>');
-var $image = $("<img>");
-var $caption = $("<p></p>");
-
-$overlay.append($image);
-$overlay.append($caption);
-$("body").append($overlay);
-
-
-$("#imageGallery a").click(function(event){
-  //prevent browswer from following link
-  event.preventDefault();
-  //store image's location in variable
-  var imageLocation = $(this).attr("href");
-  //set the image file name to a variable
-  $image.attr("src", imageLocation);
-  //reveal overlay
-  $overlay.show();
-  //store the image's alt text in a variable
-  var captionText = $(this).children("img").attr("alt")
-  //fill the image caption with the alt text
-  $caption.text(captionText);
+$(document).ready(function () {
+    $("#nanoGallery3").nanoGallery({
+        itemsBaseURL:'img',
+        thumbnailHeight: 198,
+        thumbnailWidth: 198,
+        theme:'light',
+        maxItemsPerLine: 4,
+        thumbnailGutterWidth:60,
+        thumbnailGutterHeight: 60,
+        maxWidth:980
+    });
 });
 
-$overlay.click(function(){
-  //hide overlay after the user is finished looking at the photo.
-  $overlay.hide();
-})
+var $searchBox = $('.search');
+$searchBox.keyup(function(){
+  if ($searchBox.val() === '') {
+    $(".nanoGalleryThumbnailContainer").each(function(){
+      $(this).show();
+    });
+  } else {
+    jQuery.each($(".labelDescription"), function() {
+      var $thumbnailContainer = $(this).parents(".nanoGalleryThumbnailContainer");
+      if ($(this).html().toLowerCase().indexOf($searchBox.val().toLowerCase()) == -1 ){
+        $thumbnailContainer.hide();
+      } else {
+        $thumbnailContainer.show();
+      }
+    });
+  }
+});

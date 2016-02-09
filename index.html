@@ -1,42 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="css/themes/light/nanogallery_light.min.css" type="text/css">
+	<link href="css/nanogallery.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<title>Image Gallery</title>
 </head>
 <body>
   <header>
-	   <input type='text'>
+	   <input type='text' placeholder="Search" class="search">
    </header>
    <div id='spacer'></div>
-	<ul id="imageGallery">
-
-		<li><a href="img/01.jpg"><img src="img/Thumbnails/01.jpg" alt="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons."></a></li>
-
-		<li><a href="img/02.jpg"><img src="img/Thumbnails/02.jpg" alt="The lake was so calm today. We had a great view of the snow on the mountains from here."></a></li>
-
-		<li><a href="img/03.jpg"><img src="img/Thumbnails/03.jpg" alt="I hiked to the top of the mountain and got this picture of the canyon and trees below."></a></li>
-
-		<li><a href="img/04.jpg"><img src="img/Thumbnails/04.jpg" alt="It was amazing to see an iceberg up close, it was so cold but didn’t snow today."></a></li>
-
-		<li><a href="img/05.jpg"><img src="img/Thumbnails/05.jpg" alt="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons."></a></li>
-
-		<li><a href="img/06.jpg"><img src="img/Thumbnails/06.jpg" alt="Fall is coming, I love when the leaves on the trees start to change color."></a></li>
-
-		<li><a href="img/07.jpg"><img src="img/Thumbnails/07.jpg" alt="I drove past this plantation yesterday, everything is so green!"></a></li>
-
-		<li><a href="img/08.jpg"><img src="img/Thumbnails/08.jpg" alt="My summer vacation to the Oregon Coast. I love the sandy dunes!"></a></li>
-
-		<li><a href="img/09.jpg"><img src="img/Thumbnails/09.jpg" alt="We enjoyed a quiet stroll down this countryside lane."></a></li>
-
-		<li><a href="img/10.jpg"><img src="img/Thumbnails/10.jpg" alt="Sunset at the coast! The sky turned a lovely shade of orange."></a></li>
-
-    <li><a href="img/11.jpg"><img src="img/Thumbnails/11.jpg" alt="I did a tour of a cave today and the view of the landscape below was breathtaking."></a></li>
-
-    <li><a href="img/12.jpg"><img src="img/Thumbnails/12.jpg" alt="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."></a></li>
-
-	</ul>
-	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<div id="nanoGallery3">
+		<a class='thumbnail' href="01.jpg" data-ngthumb="Thumbnails/01.jpg" data-ngdesc="I love hay bales. Took this snap on a drive through the countryside past some straw fields."></a>
+		<a class='thumbnail' href="02.jpg" data-ngthumb="Thumbnails/02.jpg" data-ngdesc="The lake was so calm today. We had a great view of the snow on the mountains from here."></a>
+		<a class='thumbnail' href="03.jpg" data-ngthumb="Thumbnails/03.jpg" data-ngdesc="I hiked to the top of the mountain and got this picture of the canyon and trees below."></a>
+		<a class='thumbnail' href="04.jpg" data-ngthumb="Thumbnails/04.jpg" data-ngdesc="It was amazing to see an iceberg up close, it was so cold but didn’t snow today."></a>
+		<a class='thumbnail' href="05.jpg" data-ngthumb="Thumbnails/05.jpg" data-ngdesc="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons."></a>
+		<a class='thumbnail' href="06.jpg" data-ngthumb="Thumbnails/06.jpg" data-ngdesc="Fall is coming, I love when the leaves on the trees start to change color."></a>
+		<a class='thumbnail' href="07.jpg" data-ngthumb="Thumbnails/07.jpg" data-ngdesc="I drove past this plantation yesterday, everything is so green!"></a>
+		<a class='thumbnail' href="08.jpg" data-ngthumb="Thumbnails/08.jpg" data-ngdesc="My summer vacation to the Oregon Coast. I love the sandy dunes!"></a>
+		<a class='thumbnail' href="09.jpg" data-ngthumb="Thumbnails/09.jpg" data-ngdesc="We enjoyed a quiet stroll down this countryside lane."></a>
+		<a class='thumbnail' href="10.jpg" data-ngthumb="Thumbnails/10.jpg" data-ngdesc="Sunset at the coast! The sky turned a lovely shade of orange."></a>
+    <a class='thumbnail' href="11.jpg" data-ngthumb="Thumbnails/11.jpg" data-ngdesc="I did a tour of a cave today and the view of the landscape below was breathtaking."></a>
+    <a class='thumbnail' href="12.jpg" data-ngthumb="Thumbnails/12.jpg" data-ngdesc="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."></a>
+	</div>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.nanogallery.min.js"></script>
 	<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
