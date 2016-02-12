@@ -27,3 +27,16 @@ input{
   border-radius: 5px;
   box-sizing: border-box;
 }
+
+#nanoGalleryViewer {
+  background:rgba(0,0,0,0.9) !important;
+}
+.nanoGalleryViewer .content .image{
+ max-width: 40% !important;
+}
+
+/*@media (min-width: 768px){
+  .nanoGalleryViewer .content .image{
+   max-width: 70% !important;
+  }
+}*/

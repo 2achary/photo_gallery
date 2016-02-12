@@ -7,7 +7,8 @@ $(document).ready(function () {
         maxItemsPerLine: 4,
         thumbnailGutterWidth:60,
         thumbnailGutterHeight: 60,
-        maxWidth:980
+        maxWidth:980,
+        viewerToolbar: {style:"innerImage", autoMinimize:2000}
     });
 });
 
