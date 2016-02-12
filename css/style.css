@@ -35,8 +35,8 @@ input{
  max-width: 40% !important;
 }
 
-/*@media (min-width: 768px){
+@media (max-width: 768px){
   .nanoGalleryViewer .content .image{
    max-width: 70% !important;
   }
-}*/
+}
